@@ -5,6 +5,7 @@
             <h5 class="card-title">{{cubo.nombre}}</h5>
             <p class="card-text">{{cubo.precio}}€</p>
             <p class="card-text">Puntuacion : {{cubo.valoracion}}</p>
+            <a [routerLink]="['/detallescubo/', cubo.idCubo]" class="btn btn-success">Detalles</a>
         </div>
     </div>
 </div>
