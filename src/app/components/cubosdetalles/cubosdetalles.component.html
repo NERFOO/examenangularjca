@@ -1,0 +1,15 @@
+<div>
+    <div *ngIf="!comentarios">
+        <h2>No hay comentarios</h2>
+    </div>
+    <div *ngIf="comentarios">
+        <div class="card" style="display:grid; grid-template-columns: 40% 60%; padding:3%" *ngFor="let com of comentarios">
+            <div style="width: 18rem;" >
+                <p>{{com.fechaComentario}}</p>
+            </div>
+            <div>
+                <p>{{com.comentario}}</p>
+            </div>
+        </div>
+    </div>
+</div>

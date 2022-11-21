@@ -1,0 +1,8 @@
+<form #loginForm="ngForm">
+    <label>Username</label>
+    <input type="text" name="username" #username><br/>
+    <label>Password</label>
+    <input type="password" name="password" #password><br/>
+
+    <button (click)="cargarToken()">Login</button>
+</form>

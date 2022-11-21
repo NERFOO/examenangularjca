@@ -1,0 +1,10 @@
+<div>
+    <div *ngIf="compras">
+        <div *ngFor="let compra of compras">
+            <h1>La fecha de la compra fue: {{compra.fechaPedido}}</h1>
+        </div>
+    </div>
+    <div *ngIf="!compras">
+        <h2>No se han realizado compras</h2>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div *ngIf="user">
+    <label>Nombre</label>
+    <input type="text" name="username" #username value="{{user.nombre}}"><br/>
+    <label>Email</label>
+    <input type="email" name="email" #email value="{{user.email}}"><br/>
+    <a [routerLink]="['/comprasuser']" class="btn btn-success">Compras</a>
+</div>

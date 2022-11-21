@@ -1,0 +1,10 @@
+<div style="display:grid; grid-template-columns: 50% 50%;">
+    <div class="card" *ngFor="let cubo of cubos">
+        <img src="{{cubo.imagen}}" class="card-img-top" alt="foto Personaje">
+        <div class="card-body">
+            <h5 class="card-title">{{cubo.nombre}}</h5>
+            <p class="card-text">{{cubo.precio}}€</p>
+            <p class="card-text">Puntuacion : {{cubo.valoracion}}</p>
+        </div>
+    </div>
+</div>

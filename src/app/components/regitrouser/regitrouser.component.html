@@ -1,0 +1,18 @@
+<div>
+    <form #loginForm="ngForm">
+        <label>Username</label>
+        <input type="text" name="username" #username><br/>
+        <label>Email</label>
+        <input type="email" name="email" #email><br/>
+        <label>Password</label>
+        <input type="password" name="password" #password><br/>
+        <label>Confirm the password</label>
+        <input type="password" name="confirmpassword" #confirmpassword><br/>
+
+        <button (click)="registroUser()">Sig in</button>
+    </form>
+
+    <div>
+        <h2 style="color: red">{{mensaje}}</h2>
+    </div>
+</div>

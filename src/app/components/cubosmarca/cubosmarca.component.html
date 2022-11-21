@@ -1,0 +1,10 @@
+<div style="display:grid; grid-template-columns: 50% 50%;">
+    <div class="card" style="width: 18rem;" *ngFor="let cubos of cubosMarca">
+        <img src="{{cubos.imagen}}" class="card-img-top" alt="foto Personaje">
+        <div class="card-body">
+            <h5 class="card-title">{{cubos.nombre}}</h5>
+            <p class="card-text">{{cubos.precio}}€</p>
+            <a [routerLink]="['/detallescubo/', cubos.idCubo]" class="btn btn-success">Comentarios</a>
+        </div>
+    </div>
+</div>
