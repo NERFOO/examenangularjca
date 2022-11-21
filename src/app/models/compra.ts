@@ -1,3 +1,5 @@
+//MODELO PARA LAS COMPRAS
+
 export class Compra {
     constructor(
         public idCubo : number ,

@@ -1,3 +1,5 @@
+//MODELO PARA LOS COMENTARIOS
+
 export class Comentarios {
     constructor(
         public idComentario : number ,

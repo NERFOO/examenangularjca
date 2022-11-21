@@ -1,3 +1,5 @@
+//MODELO PARA LOS CUBOS
+
 export class Cubo {
     constructor(
         public idCubo : number ,

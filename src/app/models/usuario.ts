@@ -1,3 +1,5 @@
+//MODELO PARA LOS NUEVOS USUARIOS
+
 export class Usuario {
     constructor(
         public idUsuario : number ,
