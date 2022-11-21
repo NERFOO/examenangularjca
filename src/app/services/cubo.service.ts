@@ -20,6 +20,14 @@ export class CuboService {
         return this._http.get(url);
     }
 
+    //LEER TODOS LOS CUBOS POR ID (SIN TOKEN)
+    getCubosId(id : number) : Observable<any> {
+        var request = "/api/Cubos/" + id;
+        var url = environment.urlCubos + request;
+
+        return this._http.get(url);
+    }
+
     //LEER TODOS LOS CUBOS DE LA API POR MARCAS (SIN TOKEN)
     getCubosMarcas() : Observable<any> {
         var request = "/api/Cubos/Marcas/";
