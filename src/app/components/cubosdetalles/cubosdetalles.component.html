@@ -1,22 +1,27 @@
 <div>
-    <div class="card" *ngIf="cubo">
-        <img src="{{cubo.imagen}}" class="card-img-top" alt="foto Personaje" style="width:250px; height: 250px;">
-        <div class="card-body">
-            <h5 class="card-title">{{cubo.nombre}}</h5>
-            <p class="card-text">{{cubo.precio}}€</p>
-            <p class="card-text">Puntuacion : {{cubo.valoracion}}</p>
-        </div>
+    <div *ngIf="!cubo">
+        <img src="./../../../assets/images/loading.gif" alt="cargando" style="width: 100%;">
     </div>
-    <div *ngIf="!comentarios">
-        <h2>No hay comentarios</h2>
-    </div>
-    <div *ngIf="comentarios">
-        <div class="card" style="display:grid; grid-template-columns: 40% 60%; padding:3%" *ngFor="let com of comentarios">
-            <div style="width: 18rem;" >
-                <p>{{com.fechaComentario}}</p>
+    <div>
+        <div class="card" *ngIf="cubo">
+            <img src="{{cubo.imagen}}" class="card-img-top" alt="foto Personaje" style="width:250px; height: 250px;">
+            <div class="card-body">
+                <h5 class="card-title">{{cubo.nombre}}</h5>
+                <p class="card-text">{{cubo.precio}}€</p>
+                <p class="card-text">Puntuacion : {{cubo.valoracion}}</p>
             </div>
-            <div>
-                <p>{{com.comentario}}</p>
+        </div>
+        <div *ngIf="!comentarios">
+            <h2>No hay comentarios</h2>
+        </div>
+        <div *ngIf="comentarios">
+            <div class="card" style="display:grid; grid-template-columns: 40% 60%; padding:3%" *ngFor="let com of comentarios">
+                <div style="width: 18rem;" >
+                    <p>{{com.fechaComentario}}</p>
+                </div>
+                <div>
+                    <p>{{com.comentario}}</p>
+                </div>
             </div>
         </div>
     </div>
